@@ -72,25 +72,25 @@ li {
 
 @keyframes slide_header {
   0% {
-  background-image: url(./img/lemonade.jpg); /* 背景画像1を指定 */
+  background-image: url(../img/lemonade.jpg); /* 背景画像1を指定 */
   }
   20% {
-  background-image: url(./img/lemonade.jpg); /* 背景画像1を指定 */
+  background-image: url(../img/lemonade.jpg); /* 背景画像1を指定 */
       }
   35% {
-  background-image: url(./img/pancake.jpg); /* 背景画像2を指定 */
+  background-image: url(../img/pancake.jpg); /* 背景画像2を指定 */
       }
   53% {
-  background-image: url(./img/pancake.jpg); /* 背景画像2を指定 */
+  background-image: url(../img/pancake.jpg); /* 背景画像2を指定 */
       }
   68% {
-  background-image: url(./img/cheesecake.jpg); /* 背景画像3を指定 */
+  background-image: url(../img/cheesecake.jpg); /* 背景画像3を指定 */
       }
   85% {
-  background-image: url(./img/cheesecake.jpg); /* 背景画像3を指定 */
+  background-image: url(../img/cheesecake.jpg); /* 背景画像3を指定 */
       }
   100% {
-  background-image: url(./img/lemonade.jpg); /* 背景画像1を指定 */
+  background-image: url(../img/lemonade.jpg); /* 背景画像1を指定 */
       }
   } 
 
