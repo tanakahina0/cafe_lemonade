@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  background-color: #fffff8;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.site-title {
+  padding: 0 16px;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+.sec-title {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 30%;
+  position: relative;
+  background-image: repeating-linear-gradient(45deg, transparent 0 3px, #bee0e1 3px 6px);
+  background-repeat: no-repeat;
+  background-size: 18% 13px;
+  background-position: bottom;
+  font-weight: bold;
+}
+.item-title {
+  font-size: 2rem;
+  display: inline-block;
+  border-bottom: solid 2px #fff33f;
+  margin-bottom: 70px;
+}
+.fixed-bg {
+  height: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper {
+  max-width: 1000px;
+  padding: 90px 16px 150px 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  position: relative;
+  animation: slide_header 16s ease infinite;
+}
+
+@keyframes slide_header {
+  0% {
+  background-image: url(/img/lemonade.jpg); /* 背景画像1を指定 */
+  }
+  20% {
+  background-image: url(/img/lemonade.jpg); /* 背景画像1を指定 */
+      }
+  35% {
+  background-image: url(/img/pancake.jpg); /* 背景画像2を指定 */
+      }
+  53% {
+  background-image: url(/img/pancake.jpg); /* 背景画像2を指定 */
+      }
+  68% {
+  background-image: url(/img/cheesecake.jpg); /* 背景画像3を指定 */
+      }
+  85% {
+  background-image: url(/img/cheesecake.jpg); /* 背景画像3を指定 */
+      }
+  100% {
+  background-image: url(/img/lemonade.jpg); /* 背景画像1を指定 */
+      }
+  } 
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav li {
+  margin-left: 30px;
+}
+nav li a {
+  color: #fff;
+  font-weight: bold;
+  transition: all  0.3s ease;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+nav li a:hover {
+  color: #fff33f;
+}
+
+/*Menu*/
+#menu {
+  margin-top: 20px;
+}
+#menu .menu-img {
+  background-image: url(../img/menu.jpg);
+  position: relative;
+}
+#menu .menu-content {
+  display: flex;
+}
+#menu .menu-item {
+  width: 50%;
+  padding: 0 45px;
+}
+#menu .menu-item:first-child {
+  border-right: solid 1px #000;
+}
+#menu .menu-item dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+#menu .menu-item dt {
+  width: 87%;
+  text-align: left;
+  border-bottom: dotted 1px #000;
+  margin-bottom: 25px;
+}
+#menu .menu-item dd {
+  width: 13%;
+  text-align: right;
+  padding-top: 8px;
+}
+#menu .menu-item dl.food {
+  margin-bottom: 55px;
+}
+
+/* moreボタン */
+a.more_btn {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+	margin: 0 auto 100px auto;
+	padding: 1rem 2rem;
+	font-weight: bold;
+	border: 2px solid #fff33f;
+	background: #fff33f;
+	color: #63c94a;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+
+a.more_btn:hover {
+	color: #27acd9;
+	background: #fff;
+}
+
+/* about */
+
+#about img {
+  width: 50%;
+}
+
+#about {
+  text-align: center;
+  display: inline;
+  margin-bottom: 100px;
+}
+
+.about-img {
+  margin-bottom: 100px;
+}
+
+/* お問い合わせ */
+#formWrap {
+	width:700px;
+	margin:0 auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:10px;
+}
+
+table.formTable th{
+	width:30%;
+	font-weight:normal;
+	background:#fdffb5;
+	text-align:left;
+}
+
+button, input, select, textarea {
+  background-color: #ebebeb!important;
+}
+
+
+.enter-reset-btn {
+  width: 130px;
+  margin: 10px auto;
+}
+
+/* @media screen and (max-width:572px) {
+
+} */
+
+/*フッター*/
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*SP*/
+@media screen and (max-width: 767px) {
+  .site-title {
+    top: 42%;
+  }
+  .sec-title {
+    font-size: 2rem;
+    top: 26%;
+  }
+  .item-title {
+    font-size: 1.25rem;
+    margin-bottom :25px;
+  }
+  .fixed-bg {
+    height: 94px;
+  }
+  .wrapper {
+    padding: 30px 16px 60px 16px;
+  }
+
+  /*Menu*/
+  #menu {
+    margin-top: 10px;
+  }
+  #menu .menu-content {
+    flex-direction: column;
+  }
+  #menu .menu-item {
+    width: 100%;
+    padding: 0;
+  }
+  #menu .menu-item:first-child {
+    border-right: none;
+  }
+  #menu .menu-item dl {
+    margin-bottom: 10px;
+  }
+  #menu .menu-item dl.food {
+    margin-bottom: 10px;
+  }
+
+  /* about */
+  #about img {
+    width: 90%;
+  }
+
+  /*お問い合わせ*/
+  #formWrap {
+    width:95%;
+    margin:0 auto;
+  }
+  table.formTable th, table.formTable td {
+    width:auto;
+    display:block;
+  }
+  table.formTable th {
+    margin-top:5px;
+    border-bottom:0;
+  }
+  form input[type="text"], form textarea {
+    width:80%;
+    padding:5px;
+    font-size:110%;
+    display:block;
+  }
+  form input[type="submit"], form input[type="reset"], form input[type="button"] {
+    display:block;
+    width:100%;
+    height:40px;
+  }
+
+}
+
+/*LoadingのためのCSS*/
+
+/* Loading背景画面設定　*/
+#splash {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	text-align:center;
+}
+
+/* Loading画像中央配置　*/
+#splash_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  z-index: 999;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+/*割れる画面*/
+.loader_cover {
+    width: 100%;
+    height: 50%;
+    background-color: #544c48;
+    transition: all .2s cubic-bezier(.04, .435, .315, .9);
+    transform: scaleY(1);
+}
+/*上の画面*/
+.loader_cover-up {
+    transform-origin: center top;
+}
+
+/*下の画面*/
+.loader_cover-down {
+    position: absolute;
+    bottom: 0;
+    transform-origin: center bottom;
+}
+/*クラス名がついたらY軸方向に0*/
+.coveranime {
+    transform: scaleY(0);
+}
