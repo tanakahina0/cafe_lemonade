@@ -373,10 +373,7 @@ button, input, select, textarea {
     height:40px;
   }
 
-　.enter-reset-btn {
-    width: 130px;
-    margin: 10px auto;
-    color:#555;
+  .enter-btn,.reset-btn {
     -webkit-appearance: none;
   }
 
