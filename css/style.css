@@ -377,6 +377,7 @@ button, input, select, textarea {
     width: 130px;
     margin: 10px auto;
     color:#555;
+    -webkit-appearance: none;
   }
 
 
