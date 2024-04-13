@@ -40,6 +40,20 @@ li {
   background-position: bottom;
   font-weight: bold;
 }
+
+#CONTACT>.menu-img>.sec-title {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 30%;
+  position: relative;
+  background-image: repeating-linear-gradient(45deg, transparent 0 3px, #bee0e1 3px 6px);
+  background-repeat: no-repeat;
+  background-size: 18% 13px;
+}
+
 .item-title {
   font-size: 2rem;
   display: inline-block;
@@ -69,6 +83,7 @@ li {
   position: relative;
   animation: slide_header 16s ease infinite;
 }
+
 
 @keyframes slide_header {
   0% {
@@ -148,23 +163,23 @@ nav li a:hover {
   margin-bottom: 55px;
 }
 
-/* moreボタン */
-a.more_btn {
+/* shop1ボタン */
+a.shop_btn {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	width: 120px;
+	width: 200px;
 	margin: 0 auto 100px auto;
 	padding: 1rem 2rem;
 	font-weight: bold;
 	border: 2px solid #fff33f;
 	background: #fff33f;
 	color: #63c94a;
-	border-radius: 100vh;
+	border-radius: 50px 0;
 	transition: 0.5s;
 }
 
-a.more_btn:hover {
+a.shop_btn:hover {
 	color: #27acd9;
 	background: #fff;
 }
@@ -173,6 +188,8 @@ a.more_btn:hover {
 
 #about img {
   width: 50%;
+  background-size: cover;
+  border-radius:30px 30px;
 }
 
 #about {
@@ -185,14 +202,21 @@ a.more_btn:hover {
   margin-bottom: 100px;
 }
 
+iframe {
+  margin-top: 50px;
+  border-radius:30px 30px;
+  width: 50vw;
+  height: 60vh;
+}
+
 /* お問い合わせ */
-#formWrap {
+#CONTACT {
 	width:700px;
 	margin:0 auto;
 	color:#555;
-	line-height:120%;
 	font-size:90%;
 }
+
 
 table.formTable{
 	width:100%;
@@ -213,18 +237,18 @@ table.formTable th{
 }
 
 button, input, select, textarea {
-  background-color: #ebebeb!important;
+  background-color: #e7f6d9!important;
 }
-
 
 .enter-reset-btn {
   width: 130px;
   margin: 10px auto;
 }
 
-/* @media screen and (max-width:572px) {
 
-} */
+.contact-title {
+  margin-bottom: 15px;
+}
 
 /*フッター*/
 #footer {
@@ -279,8 +303,14 @@ button, input, select, textarea {
     width: 90%;
   }
 
+  iframe {
+    margin-top: 50px;
+    border-radius:30px 30px;
+    width: 90%;
+  }
+
   /*お問い合わせ*/
-  #formWrap {
+  #CONTACT {
     width:95%;
     margin:0 auto;
   }
@@ -308,7 +338,7 @@ button, input, select, textarea {
 
 /*LoadingのためのCSS*/
 
-/* Loading背景画面設定　*/
+/* Loading背景画面設定*/
 #splash {
 	position: fixed;
 	width: 100%;
@@ -317,7 +347,7 @@ button, input, select, textarea {
 	text-align:center;
 }
 
-/* Loading画像中央配置　*/
+/* Loading画像中央配置*/
 #splash_text {
 	position: absolute;
 	top: 50%;
