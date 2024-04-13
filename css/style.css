@@ -277,6 +277,44 @@ button, input, select, textarea {
     padding: 30px 16px 60px 16px;
   }
 
+
+　/*ヘッダー*/
+  #header {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+    position: relative;
+    animation: slide_header 16s ease infinite;
+  }
+  
+  
+  @keyframes slide_header {
+    0% {
+    background-image: url(../img/sp/lemonade.jpg); /* 背景画像1を指定 */
+    }
+    20% {
+    background-image: url(../img/sp/lemonade.jpg); /* 背景画像1を指定 */
+        }
+    35% {
+    background-image: url(../img/sp/pancake.jpg); /* 背景画像2を指定 */
+        }
+    53% {
+    background-image: url(../img/sp/pancake.jpg); /* 背景画像2を指定 */
+        }
+    68% {
+    background-image: url(../img/sp/cheesecake.jpg); /* 背景画像3を指定 */
+        }
+    85% {
+    background-image: url(../img/sp/cheesecake.jpg); /* 背景画像3を指定 */
+        }
+    100% {
+    background-image: url(../img/sp/lemonade.jpg); /* 背景画像1を指定 */
+        }
+    } 
+	
   /*Menu*/
   #menu {
     margin-top: 10px;
