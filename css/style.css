@@ -373,6 +373,13 @@ button, input, select, textarea {
     height:40px;
   }
 
+　.enter-reset-btn {
+    width: 130px;
+    margin: 10px auto;
+    color:#555;
+  }
+
+
 }
 
 /*LoadingのためのCSS*/
